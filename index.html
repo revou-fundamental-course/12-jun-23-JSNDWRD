@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="bar">
+          <marquee behavior="scroll" direction="left">This Tool is used to convert celcius based degree to a fahrenheit degree</marquee>
+        </div>
+        <div class="text">
+          <p>Hello, World!</p>
+          <h1>Convert from <span>Celcius</span> to <span>Fahrenheit</span> easily with our tools!</h1>
+        </div>
+        <div class="button">
+          <div class="calculate">
+            <button>Convert</button>
+          </div>
+          <div class="reverse">
+            <button>Reverse</button>
+          </div>
+          <div class="reset">
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="backdrop">
+          <div>
+            <label for="adaValue">Celcius &deg;C:</label>
+            <input type="number" name="adaValue" id="adaValue" placeholder="Celcius" />
+          </div>
+          <div>
+            <label for="hasilValue">Fahrenheit &deg;F:</label>
+            <input type="number" name="hasilValue" id="hasilValue" placeholder="Fahrenheit" disabled />
+          </div>
+          <div>
+            <label for="ck">How to Calculate:</label>
+            <textarea name="ck" id="ck"></textarea>
+          </div>
+          <div>
+            <h2 class="htc">How to Convert Temperature Degree.</h2>
+            <ul>
+              <li>
+                Celcius: <br />
+                (Fahrenheit - 32) multiplied by 5 and divided by 9
+              </li>
+              <li>
+                Fahrenheit: <br />
+                (Celcius multiplied by 9 and divided by 5) + 32
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

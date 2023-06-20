@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #224444;
+}
+
+main {
+  min-height: 100vh;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1b4b;
+  border-radius: 1em;
+  box-shadow: 0px 0px 3px 3px #2c2d87;
+  display: flex;
+}
+
+.left,
+.right {
+  box-sizing: border-box;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 65%;
+  height: 100vh;
+  padding: 1.5em;
+  background-image: url("../image/bg-alt-3.png");
+  background-position: 22em 12em;
+  background-repeat: no-repeat;
+  background-size: 13em;
+}
+
+.bar {
+  width: 80%;
+  border-radius: 1em;
+  padding: 0.4em 0.4em 0;
+  background-color: rgba(86, 89, 245, 0.4);
+  margin-left: 2.5em;
+  margin-bottom: 1em;
+  /**box-shadow: 0px 0px 2px 2px #6059ee;**/
+}
+
+.bar > marquee {
+  background-color: rgba(30, 27, 75, 0.4);
+  color: white;
+  border-radius: 1.25em;
+}
+
+.text {
+  width: 50%;
+  margin-left: 3em;
+}
+
+.text > p {
+  font-size: 1.5em;
+}
+
+.text > h1 {
+  font-weight: 600;
+}
+
+h1 > span {
+  color: #5659f5;
+  text-shadow: 2px 2px 4px #5659f5;
+}
+
+.button {
+  display: flex;
+  margin-top: 1em;
+  margin-left: 2.5em;
+}
+
+.button > div {
+  margin: 0 0.5em;
+}
+
+.button button {
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 0.5em;
+  width: 5.5em;
+  color: white;
+  background-color: #756ef1;
+  border: none;
+  border-radius: 0.75em;
+  box-shadow: 2px 2px 8px 2px #5750dc;
+  text-shadow: 1px 1px 1px white;
+  transition: 300ms;
+}
+
+.button button:hover {
+  text-shadow: 1px 1px 3px white;
+  box-shadow: 3px 3px 10px 5px #5750dc;
+}
+
+.calculate > button {
+  background-color: #5659ff;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 0.75em 0;
+  background-color: #a78bfa;
+  background-image: url("../image/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.backdrop {
+  box-sizing: border-box;
+  width: 95%;
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 0px 3px 2px #946aff;
+  border-radius: 0.25em;
+  padding: 0.5em 0.8em;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.1em 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 0.25em;
+}
+
+label {
+  margin-left: 0.25em;
+}
+
+input[type="number"] {
+  height: 2.5em;
+}
+
+textarea {
+  resize: none;
+  height: 6em;
+}
+
+.htc {
+  color: white;
+  text-shadow: 1px 1px 1px #5659f5;
+}
+
+ul {
+  color: black;
+  box-sizing: border-box;
+  padding: 0.1em 0.5em;
+  border: 1px solid #5659f5;
+  border-radius: 0.25em;
+  list-style-type: none;
+  font-size: 0.95em;
+}
