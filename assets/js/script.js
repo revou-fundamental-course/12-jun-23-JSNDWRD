@@ -3,21 +3,23 @@ function resetto() {
 }
 
 function convertto() {
-  const iniValue = document.getElementById("adaValue").value;
+  const iniValue = document.getElementById("adaValue").value; /* Mengambil value angka dari input ber-id "adaValue" */
   if (iniValue === "") {
-    alert("Input a number");
+    alert("Input a number"); /* Mengeluarkan pop-up jika menekan tombol convert tanpa mengisi angka terlebih dahulu */
   } else {
     if (document.getElementById("label-v1").innerHTML == "Celsius:") {
-      var ituValue = (iniValue * 9) / 5 + 32;
-      document.getElementById("hasilValue").value = ituValue;
-      document.getElementById("ck").value = `Fahrenheit = (${iniValue} * 9) / 5 + 32 = ${ituValue}`;
+      var ituValue = ((iniValue * 9) / 5 + 32).toFixed(2); /* Rumus Output jika Input berbasis derajat Celsius */
+      document.getElementById("hasilValue").value = ituValue; /* Print output ke element dengan id "hasilValue" */
+      document.getElementById("ck").value = `Fahrenheit = (${iniValue} * 9) / 5 + 32 = ${ituValue}${String.fromCharCode(176)}F`; /* Cara Kalkulasi */
     } else {
-      var ituValue = ((iniValue - 32) * 5) / 9;
-      document.getElementById("hasilValue").value = ituValue;
-      document.getElementById("ck").value = `Celsius = (${iniValue} - 32) * 5 / 9 = ${ituValue}`;
+      var ituValue = (((iniValue - 32) * 5) / 9).toFixed(2); /* Rumus Output jika Input berbasis derajat Fahrenheit */
+      document.getElementById("hasilValue").value = ituValue; /* Print output ke element dengan id "hasilValue" */
+      document.getElementById("ck").value = `Celsius = (${iniValue} - 32) * 5 / 9 = ${ituValue}${String.fromCharCode(176)}C`; /* Cara Kalkulasi */
     }
   }
 }
+
+/* Fungsi reverseto() dan reverseto2() berfungsi untuk mengubah teks html dan mengubah attribute onclick dalam tag button agar dapat berjalan dua arah */
 
 function reverseto() {
   document.getElementById("label-v1").innerHTML = "Fahrenheit:";
