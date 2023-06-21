@@ -24,6 +24,9 @@ function reverseto() {
   document.getElementById("label-v2").innerHTML = "Celsius:";
   document.getElementById("adaValue").placeholder = "Fahrenheit";
   document.getElementById("hasilValue").placeholder = "Celsius";
+  document.getElementById("text-cf").innerHTML = "Fahrenheit to Celsius";
+  document.getElementById("cels").innerHTML = "Fahrenheit";
+  document.getElementById("fahr").innerHTML = "Celsius";
   document.getElementById("reverser").setAttribute("onclick", "reverseto2()");
 }
 
@@ -32,5 +35,8 @@ function reverseto2() {
   document.getElementById("label-v2").innerHTML = "Fahrenheit:";
   document.getElementById("adaValue").placeholder = "Celsius";
   document.getElementById("hasilValue").placeholder = "Fahrenheit";
+  document.getElementById("text-cf").innerHTML = "Celsius to Fahrenheit";
+  document.getElementById("cels").innerHTML = "Celsius";
+  document.getElementById("fahr").innerHTML = "Fahrenheit";
   document.getElementById("reverser").setAttribute("onclick", "reverseto()");
 }
