@@ -10,13 +10,17 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  max-height: 100vh;
   margin: 1.5em;
   font-family: "Poppins", sans-serif;
   background-color: #1e1b4b;
   border-radius: 1em;
   box-shadow: 0px 0px 3px 3px #2c2d87;
   display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 .left,
@@ -30,10 +34,10 @@ main {
   justify-content: center;
   color: white;
   width: 65%;
-  height: 100vh;
+  height: 95vh;
   padding: 1.5em;
   background-image: url("../image/bg-alt-3.png");
-  background-position: 22em 12em;
+  background-position: 22em 9em;
   background-repeat: no-repeat;
   background-size: 13em;
 }
@@ -65,6 +69,10 @@ main {
 
 .text > h1 {
   font-weight: 600;
+}
+
+.text p:nth-of-type(2) a {
+  color: #5659f5;
 }
 
 h1 > span {
@@ -106,10 +114,37 @@ h1 > span {
   background-color: #5659ff;
 }
 
+.contact > div {
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 2px #5659f5;
+  align-items: center;
+  padding: 0.25em 0.5em;
+  margin: 0 0.1em;
+}
+
+.contact a svg {
+  padding: 0.2em;
+  border: 1px solid #5659f5;
+  border-radius: 100%;
+  transition: 300ms;
+}
+
+.contact a:hover svg {
+  padding: 0.5em;
+  margin-top: -0.6em;
+  translate: 0 2.5em;
+}
+
+.contact {
+  display: flex;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
 .right {
   display: flex;
   width: 50%;
-  height: 100vh;
   border-radius: 0.5em;
   margin: 1em;
   padding: 0.75em 0;
@@ -147,11 +182,13 @@ label {
 
 input[type="number"] {
   height: 2.5em;
+  color: white;
 }
 
 textarea {
   resize: none;
   height: 6em;
+  color: white;
 }
 
 .htc {
@@ -160,7 +197,8 @@ textarea {
 }
 
 ul {
-  color: black;
+  color: white;
+  background-color: rgba(86, 89, 245, 0.3);
   box-sizing: border-box;
   padding: 0.1em 0.5em;
   border: 1px solid #5659f5;
