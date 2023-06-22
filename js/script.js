@@ -29,6 +29,7 @@ function reverseto() {
   document.getElementById("text-cf").innerHTML = "Fahrenheit to Celsius";
   document.getElementById("cels").innerHTML = "Fahrenheit";
   document.getElementById("fahr").innerHTML = "Celsius";
+  resetto();
   document.getElementById("reverser").setAttribute("onclick", "reverseto2()");
 }
 
@@ -40,5 +41,6 @@ function reverseto2() {
   document.getElementById("text-cf").innerHTML = "Celsius to Fahrenheit";
   document.getElementById("cels").innerHTML = "Celsius";
   document.getElementById("fahr").innerHTML = "Fahrenheit";
+  resetto();
   document.getElementById("reverser").setAttribute("onclick", "reverseto()");
 }
